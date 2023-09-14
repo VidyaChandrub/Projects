@@ -24,7 +24,7 @@ class Var{
         System.out.println(v2.b);
         System.out.println(v2.c);
 
-        v2.b = 300;  // value of instance variables vary 
+        v2.b = 300;  // value of instance variables vary from value to value
 
         System.out.println(a+v1.b+v1.c);
         System.out.println(a+v2.b+v2.c); 

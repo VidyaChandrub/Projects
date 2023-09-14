@@ -105,3 +105,113 @@ public class RandomArithmeticOperation {
         System.out.printf("%d %s %d = %.2f%n", num1, operator, num2, result);
     }
 }
+
+import java.util.Scanner;
+
+public class DayOfWeek {
+    public static void main(String[] args) {
+        // Create a Scanner object to read user input
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user for input
+        System.out.print("Enter a number from 1 to 7: ");
+
+        // Read the input number
+        int number = scanner.nextInt();
+
+        // Close the scanner to prevent resource leak
+        scanner.close();
+
+        // Use a switch-case statement to determine the day of the week
+        String dayOfWeek;
+        switch (number) {
+            case 1:
+                dayOfWeek = "Sunday";
+                break;
+            case 2:
+                dayOfWeek = "Monday";
+                break;
+            case 3:
+                dayOfWeek = "Tuesday";
+                break;
+            case 4:
+                dayOfWeek = "Wednesday";
+                break;
+            case 5:
+                dayOfWeek = "Thursday";
+                break;
+            case 6:
+                dayOfWeek = "Friday";
+                break;
+            case 7:
+                dayOfWeek = "Saturday";
+                break;
+            default:
+                dayOfWeek = "Invalid input. Please enter a number from 1 to 7.";
+                break;
+        }
+
+        // Display the corresponding day of the week
+        System.out.println("The day corresponding to " + number + " is " + dayOfWeek + ".");
+    }
+}
+
+
+import java.util.Scanner;
+
+public class GradeCalculator {
+    public static void main(String[] args) {
+        // Create a Scanner object to read user input
+        Scanner scanner = new Scanner(System.in);
+
+        // Prompt the user for the numerical score
+        System.out.print("Enter the student's numerical score: ");
+
+        // Read the numerical score
+        double score = scanner.nextDouble();
+
+        // Close the scanner to prevent resource leak
+        scanner.close();
+
+        // Determine the letter grade based on the score range
+        String letterGrade;
+        if (score >= 90 && score <= 100) {
+            letterGrade = "A";
+        } else if (score >= 80 && score < 90) {
+            letterGrade = "B";
+        } else if (score >= 70 && score < 80) {
+            letterGrade = "C";
+        } else if (score >= 60 && score < 70) {
+            letterGrade = "D";
+        } else if (score >= 0 && score < 60) {
+            letterGrade = "F";
+        } else {
+            letterGrade = "Invalid score. Please enter a score between 0 and 100.";
+        }
+
+        // Display the corresponding letter grade
+        System.out.println("The student's letter grade is: " + letterGrade);
+    }
+}
+
+
+public class SquareArray {
+    public static void main(String[] args) {
+        // Define the size of the array
+        int size = 10;
+
+        // Create an array to store the squares
+        int[] squares = new int[size];
+
+        // Calculate and populate the array with squares
+        for (int i = 0; i < size; i++) {
+            squares[i] = (i + 1) * (i + 1);
+        }
+
+        // Print the array of squares
+        System.out.print("Array of squares: ");
+        for (int i = 0; i < size; i++) {
+            System.out.print(squares[i] + " ");
+        }
+    }
+}
