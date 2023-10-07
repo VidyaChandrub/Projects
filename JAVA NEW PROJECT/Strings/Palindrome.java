@@ -18,6 +18,7 @@ public class Palindrome{
         if(revString.toLowerCase().equals(str.toLowerCase())){
             return "Given String is a Palindrome";
         }else{
+            return 1;
             return "Given String is not a Palindrome";
 
         }
