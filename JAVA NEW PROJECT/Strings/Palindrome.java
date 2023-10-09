@@ -10,9 +10,9 @@ public class Palindrome{
     }
 
     public static String palindromecheck(String str){
-        String revString="";
+        String reverseString="";
         for(int i=str.length()-1; i>=0; i--){
-            revString += str.charAt(i);
+            reverseString += str.charAt(i);
         }
         
         if(revString.toLowerCase().equals(str.toLowerCase())){
