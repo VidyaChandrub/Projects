@@ -23,5 +23,7 @@ public class Test1{
         char[] arr = str.toCharArray();
         System.out.println(arr);
 
+        System.out.println(str2.indexOf('d'));
+
     }
 }
