@@ -13,6 +13,8 @@ public class Test1{
         String str3 = new String("Vidya");
         String str4 = new String("Vidya");
 
+        System.out.println(str3.concat(str4));
+
         //Difference between == and equals
         boolean result1  = (str3 == str4);  //checks reference variable
         System.out.println(result1);
