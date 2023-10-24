@@ -1,7 +1,7 @@
 const addBtn = document.querySelector("#add-btn");
 const newTaskInput = document.querySelector("#wrapper input");
 const taskContainer = document.querySelector("#tasks");
-const error = document.getElementById("error");
+const error1 = document.getElementById("error");
 const countValue = document.querySelector(".count-value");
 
 let taskCount = 0;
@@ -11,11 +11,11 @@ let displayCount = (taskCount) => {
 }
 
 let addTask = () =>{
-    const taskName = newTaskInput.value.trim();
-    error.style.display = "none";
+    let taskName = newTaskInput.value.trim();
+    error1.style.display = " ";
     if(!taskName){
         setTimeout(() => {
-            error.style.value = "block";
+            error1.style.value = "block";
         }, 2000);
         return;
     }
