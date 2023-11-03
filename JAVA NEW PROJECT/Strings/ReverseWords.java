@@ -35,24 +35,3 @@ public class ReverseWords {
     }
 }
 */
-import java.util.*;
-
-public class ReverseWords{
-    public static void main(String args){
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the sentence : ");
-        String str = sc.next();
-    }
-
-    public static ReverseSentence(String str){
-        String revSentence = "";
-        char[] words = str.toCharArray();
-        for(String word: words){
-
-        }
-    }
-
-    public static ReverseWord(String str){
-        
-    }
-}
