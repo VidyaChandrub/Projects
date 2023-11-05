@@ -5,6 +5,7 @@ function recurse(number){
 
     var newNum = number - 1;
     if(newNum > 0){
+        
         recurse(newNum);
     }
     
