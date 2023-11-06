@@ -5,3 +5,14 @@ let X = function (num){
 }
 
 console.log(X(6));
+
+
+function mul(x){
+    return function(y){
+        return function (z){
+            return x*y*z;
+        }
+    }
+}
+
+mul(3);
