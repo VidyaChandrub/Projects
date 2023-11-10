@@ -10,3 +10,8 @@ let str = "VIDYACHANDRU";
 for(let s of str){
     console.log(s);
 }
+
+let arr = ["vidya", "Chandru", "Padma", "Bharu", "sandya"]
+arr.forEach(element => {
+    console.log(element)
+});
