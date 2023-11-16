@@ -15,4 +15,4 @@ function showTime(){
     setTimeout(showTime, 2000);
 }
 
-showTime();
+console.log(showTime);
