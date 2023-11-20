@@ -2,7 +2,8 @@ package ObjectOriented.classesAndobjects;
 
 public class Constructor {
     private String name;
-    Constructor(){
+
+    Constructor(){                                                      // No arg constructor
         System.out.println("Constructor called :) :) ");
         name = "Vidya";
     }
