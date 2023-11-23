@@ -14,6 +14,7 @@ public class Test2 {
         Dog d = new Dog();
 
         System.out.println(d instanceof Dog);
+        System.out.println();
         System.out.println(d instanceof Animal);
         System.out.println(d instanceof Cat);
     }
