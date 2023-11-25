@@ -8,7 +8,7 @@ public class OrderDetails {
         // Parse command line arguments
         String orderId = args[0];
         String itemName = args[1];
-        int quantity = Integer.parseInt(args[2]);
+        //int quantity = Integer.parseInt(args[2]);
         double totalCost = Double.parseDouble(args[3]);
 
         // Print the order details
