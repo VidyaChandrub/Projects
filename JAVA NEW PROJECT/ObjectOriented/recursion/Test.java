@@ -12,6 +12,7 @@ public class Test {
     }
     public static void main(String[] args) {
         Test a = new Test();
+        Test a2 = new Test();
         int number = 4;
         int result = a.fact(number);
         System.out.println(result);
