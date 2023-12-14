@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Login</title>
+    <script src="data.js"></script>
+    <script src="localStorage.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="LoginForm" class="form">
+            <label for="userName" class="form-label">Username :</label>
+            <input type="text" id="userName" name="userName" class="form-control" required><br><br>
+    
+            <label for="password" class="form-label">Password :</label>
+            <input type="password" id="password" name="password" class="form-control" required><br><br>
+    
+            <button type="button" class="btn btn-success" onclick="submitForm()">Login</button>
+        </form>
+    </div>
+    
+    <hr>
+    <div class="container">
+        <table id="userData" class="table table-striped" >
+            <tr class="row">
+                <th class="col-md-6">Username</th>
+                <th class="col-md-6">Password</th>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    form {
+      max-width: 300px;
+      margin: 20px auto;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="submitForm()">Login</button>
+  </form>
+
+  <table id="userData">
+    <tr>
+      <th>Username</th>
+      <th>Password</th>
+    </tr>
+  </table>
+
+  <script>
+    function submitForm() {
+      // Get values from the form
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Create a new row in the table
+      var table = document.getElementById("userData");
+      var row = table.insertRow(1); // Insert at the second row (after the header row)
+
+      // Insert cells into the row
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+
+      // Set the cell values
+      cell1.innerHTML = username;
+      cell2.innerHTML = password;
+
+      // Clear the form
+      document.getElementById("loginForm").reset();
+    }
+  </script>
+
+</body>
+</html> -->
