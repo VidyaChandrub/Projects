@@ -32,4 +32,11 @@ public class Leapyear{
             System.out.println("given year is not leap year");
         }
     }
+
+    if(leap){
+        System.out.println("leap");
+
+    }else{
+        System.out.println("Not leap");
+    }
 }
